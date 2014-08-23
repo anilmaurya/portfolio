@@ -1,0 +1,72 @@
+<!-- Header -->
+%header
+  .container
+    .row
+      .col-lg-12
+        = image_tag 'anil.jpg', class: 'img-responsive'
+      .intro-text
+        %span.name
+          Anil Maurya
+        %hr.star-light
+        %span.skills
+          Programmer - Full Stack Web Developer - Learner  
+
+<!-- Portfolio Grid Section -->
+%section{:id => "portfolio"}
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2 Portfolio
+        %hr.star-primary
+    .row
+      - ['cabin', 'cake', 'circus', 'game', 'safe', 'submarine'].each do |image_name|
+        .col-sm-4.portfolio-item
+          = link_to '#portfolioModal1', class: "portfolio-link", data: {toggle: 'modal'} do
+            .caption
+              .caption-content
+                %i.fa.fa-search-plus.fa-3x
+            = image_tag "#{image_name}.png", class: 'img-responsive'
+
+<!-- About Section -->
+%section.success{:id => "about"}
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2 About
+        %hr.star-light
+    .row
+      .col-lg-4.col-lg-offset-2
+        %p I enjoy writing software. I am enthusiatic about Ruby, Rails, Games and Open Source. Currently I am following my passion with Josh Software.
+      .col-lg-4
+        %p Besides writing codes I enjoy playing Football, helping on stackowerflow, reading on quora, listening music, watching movies/series, playing computer/mobile games.
+        %br Sometimes I wonder how people get bored when we have so many games to play. 
+
+<!-- Contact Section -->
+%section{:id => "contact"}
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2 Contact Me
+        %hr.star-primary
+    .row
+      .col-lg-8.col-lg-offset-2
+        = form_for 'contact' do |f|
+          .row.control-group
+            .form-group.col-xs-12.floating-label-form-group.controls
+              = label_tag 'Name'
+              = text_field 'name', placeholder: 'Name', class: 'form-control'
+              %p.help-block.text-danger
+          .row.control-group
+            .form-group.col-xs-12.floating-label-form-group.controls
+              = label_tag 'Email Address'
+              = text_field 'email', placeholder: 'Email Address', class: 'form-control'
+              %p.help-block.text-danger
+          .row.control-group
+            .form-group.col-xs-12.floating-label-form-group.controls
+              = label_tag 'Message'
+              = text_area 'message', placeholder: 'Name', class: 'form-control', rows: '5'
+              %p.help-block.text-danger
+          #success
+          .row
+            .form-group.col-xs-12
+              = f.submit 'Send', class: "btn btn-success btn-lg"
