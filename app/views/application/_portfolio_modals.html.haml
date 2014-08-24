@@ -1,0 +1,25 @@
+<!-- Portfolio Modals -->
+- ['bidder'].each_with_index do |image_name, index|
+  .portfolio-modal.modal.fade{:id => "portfolioModal#{index}", :tabindex => "-1", :role => "dialog", :'aria-hidden' => "true"}
+    .modal-content
+      .close-modal{:'data-dismiss' => "modal"}
+        .lr
+          .rl
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2
+            .modal-body
+              %h2 Bidder
+              %hr.star-primary
+              = image_tag "#{image_name}.png", class: "img-responsive img-centered"
+              %p 
+                Bidder is rails based 2 player Game.
+                We liked idea of 'Bidding for Fun' so we built this game in Rails Rumble 2013(48 hrs online coding competition) .If you enjoy bidding for fun then you will surely enjoy this Game. just login with your twitter handle without any signup and challenge your friends.
+              %ul.list-inline.item-details
+                %li Opensource
+                %li 
+                  Date:
+                  %strong Oct 2013
+              = link_to '#', class: 'btn btn-default', data: {dismiss: 'modal'} do
+                %i.fa.fa-times Close
+

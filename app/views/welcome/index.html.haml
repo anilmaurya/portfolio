@@ -19,9 +19,9 @@
         %h2 Portfolio
         %hr.star-primary
     .row
-      - ['cabin', 'cake', 'circus', 'game', 'safe', 'submarine'].each do |image_name|
+      - ['bidder', 'cake', 'circus', 'game', 'safe', 'submarine'].each_with_index do |image_name, index|
         .col-sm-4.portfolio-item
-          = link_to '#portfolioModal1', class: "portfolio-link", data: {toggle: 'modal'} do
+          = link_to 'javascript:void(0)', data: {target: "#portfolioModal#{index}"}, class: "portfolio-link" do
             .caption
               .caption-content
                 %i.fa.fa-search-plus.fa-3x
