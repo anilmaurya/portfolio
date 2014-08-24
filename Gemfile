@@ -42,6 +42,8 @@ end
 # Haml-rails provides Haml generators for Rails 4
 gem 'haml-rails'
 
+# Serve assets on heroku
+gem 'rails_12factor', group: :production
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
