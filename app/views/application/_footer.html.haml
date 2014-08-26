@@ -3,25 +3,27 @@
   .footer-above
     .container
       .row
-        .footer-col.col-md-4
+        .footer-col.col-md-6
           %h3 Location
           %p Pune
           %br
             India
-        .footer-col.col-md-4
+        .footer-col.col-md-6
           %h3 Around the Web
           %ul.list-inline
             %li
-              = link_to '#', class: 'btn-social btn-outline' do
+              = link_to 'http://www.facebook.com/akanilrocks', class: 'btn-social btn-outline', target: '_blank' do
                 %i.fa.fa-fw.fa-facebook
-              = link_to '#', class: 'btn-social btn-outline' do
-                %i.fa.fa-fw.fa-google-plus
-              = link_to '#', class: 'btn-social btn-outline' do
+              = link_to 'http://stackoverflow.com/users/1970061/anil-maurya', class: 'btn-social btn-outline', target: '_blank' do
+                %i.fa.fa-fw.fa-stack-overflow
+              = link_to 'http://twitter.com/maurya_anill', class: 'btn-social btn-outline', target: '_blank' do
                 %i.fa.fa-fw.fa-twitter
-              = link_to '#', class: 'btn-social btn-outline' do
+              = link_to 'http://www.linkedin.com/in/anilmaurya8', class: 'btn-social btn-outline', target: '_blank' do
                 %i.fa.fa-fw.fa-linkedin
-        .footer-col.col-md-4
-          %h3 About
+              = link_to 'http://programmingright.blogspot.in', class: 'btn-social btn-outline', target: '_blank' do
+                %i.fa.fa-fw.fa-rss
+              = link_to 'https://github.com/anilmaurya', class: 'btn-social btn-outline', target: '_blank' do
+                %i.fa.fa-fw.fa-github
 
   .footer-below
     .container

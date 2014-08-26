@@ -16,17 +16,16 @@
   .container
     .row
       .col-lg-12.text-center
-        %h2 Portfolio
+        %h2 Showcase
         %hr.star-primary
     .row
       - ['bidder', 'burst-balloon'].each_with_index do |image_name, index|
-        .col-sm-4.portfolio-item
+        .col-sm-6.portfolio-item
           = link_to 'javascript:void(0)', data: {target: "#portfolioModal#{index}"}, class: "portfolio-link" do
             .caption
               .caption-content
                 %i.fa.fa-search-plus.fa-3x
             = image_tag "#{image_name}.png", class: 'img-responsive'
-
 <!-- About Section -->
 %section.success{:id => "about"}
   .container
