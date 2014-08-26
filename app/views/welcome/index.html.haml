@@ -63,6 +63,11 @@
               %p.help-block.text-danger
           .row.control-group
             .form-group.col-xs-12.floating-label-form-group.controls
+              = label_tag 'Phone No.'
+              = text_field_tag 'phone', nil, placeholder: 'Phone No.', class: 'form-control'
+              %p.help-block.text-danger
+          .row.control-group
+            .form-group.col-xs-12.floating-label-form-group.controls
               = label_tag 'Message'
               = text_area_tag 'message', nil, placeholder: 'Message', class: 'form-control', rows: '5'
               %p.help-block.text-danger
