@@ -1,0 +1,20 @@
+%h2 Bidder
+%hr.star-primary
+= image_tag "#{image_name}.png", class: "img-responsive img-centered"
+%p 
+  Bidder is rails based 2 player Game.
+  
+  We liked idea of 'Bidding for Fun' so we built this game in Rails Rumble 2013(48 hrs online coding competition) .
+  If you enjoy bidding for fun then you will surely enjoy this Game. just login with your twitter handle without any signup and challenge your friends.
+%ul.list-inline.item-details
+  %li 
+    Date:
+    %strong Oct 2013
+  %li 
+    %strong Opensource, Ruby, Rails
+  %li
+    %strong= link_to 'Github', 'https://github.com/anilmaurya/bidder'
+  %li
+    %strong= link_to 'Play', 'http://www.playbidder.in'
+= link_to '#', class: 'btn btn-default', data: {dismiss: 'modal'} do
+  %i.fa.fa-times Close

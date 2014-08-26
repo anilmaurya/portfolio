@@ -19,7 +19,7 @@
         %h2 Portfolio
         %hr.star-primary
     .row
-      - ['bidder', 'cake', 'circus', 'game', 'safe', 'submarine'].each_with_index do |image_name, index|
+      - ['bidder', 'burst-balloon'].each_with_index do |image_name, index|
         .col-sm-4.portfolio-item
           = link_to 'javascript:void(0)', data: {target: "#portfolioModal#{index}"}, class: "portfolio-link" do
             .caption
@@ -36,7 +36,7 @@
         %hr.star-light
     .row
       .col-lg-4.col-lg-offset-2
-        %p I enjoy writing software. I am enthusiatic about Ruby, Rails, Games and Open Source. Currently I am following my passion with Josh Software.
+        %p I enjoy programming. I am enthusiatic about Ruby, Rails, Games and Open Source. Currently I am following my passion with Josh Software.
       .col-lg-4
         %p Besides writing codes I enjoy playing Football, helping on stackowerflow, reading on quora, listening music, watching movies/series, playing computer/mobile games.
         %br Sometimes I wonder how people get bored when we have so many games to play. 
@@ -54,17 +54,17 @@
           .row.control-group
             .form-group.col-xs-12.floating-label-form-group.controls
               = label_tag 'Name'
-              = text_field 'name', placeholder: 'Name', class: 'form-control'
+              = text_field_tag 'name', nil, placeholder: 'Name', class: 'form-control'
               %p.help-block.text-danger
           .row.control-group
             .form-group.col-xs-12.floating-label-form-group.controls
               = label_tag 'Email Address'
-              = text_field 'email', placeholder: 'Email Address', class: 'form-control'
+              = text_field_tag 'email', nil, placeholder: 'Email Address', class: 'form-control'
               %p.help-block.text-danger
           .row.control-group
             .form-group.col-xs-12.floating-label-form-group.controls
               = label_tag 'Message'
-              = text_area 'message', placeholder: 'Name', class: 'form-control', rows: '5'
+              = text_area_tag 'message', nil, placeholder: 'Message', class: 'form-control', rows: '5'
               %p.help-block.text-danger
           #success
           .row
