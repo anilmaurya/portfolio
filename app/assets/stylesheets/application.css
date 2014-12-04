@@ -16,3 +16,12 @@
 header img{
   border-radius: 5%;
 }
+.top-nav-collapse{
+  padding: 0px;
+}
+.color_white{
+  color: white;
+}
+.send_btn{
+  margin-top: 20px;
+}

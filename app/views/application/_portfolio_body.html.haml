@@ -1,0 +1,17 @@
+%h2 This site
+%hr.star-primary
+= image_tag "#{image_name}.png", class: "img-responsive img-centered"
+%p 
+
+  This site is open source.
+  If you are interested in making portfolio for yourself, just clone this repo and change data.
+%ul.list-inline.item-details
+  %li 
+    Date:
+    %strong Oct 2013
+  %li 
+    %strong Opensource, Ruby, Rails
+  %li
+    %strong= link_to 'Github', 'https://github.com/anilmaurya/portfolio'
+= link_to '#', class: 'btn btn-default', data: {dismiss: 'modal'} do
+  %i.fa.fa-times Close

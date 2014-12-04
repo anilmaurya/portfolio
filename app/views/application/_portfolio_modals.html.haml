@@ -1,5 +1,5 @@
 <!-- Portfolio Modals -->
-- ['bidder', 'burst-balloon'].each_with_index do |image_name, index|
+- ['bidder', 'burst_balloon', 'hash_tags_on_graph', 'portfolio'].each_with_index do |image_name, index|
   .portfolio-modal.modal.fade{:id => "portfolioModal#{index}", :tabindex => "-1", :role => "dialog", :'aria-hidden' => "true"}
     .modal-content
       .close-modal{:'data-dismiss' => "modal"}
@@ -9,4 +9,4 @@
         .row
           .col-lg-8.col-lg-offset-2
             .modal-body
-              = render "modal#{index}_body", image_name: image_name
+              = render "#{image_name}_body", image_name: image_name
