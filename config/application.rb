@@ -19,5 +19,15 @@ module Portfolio
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    ActionMailer::Base.smtp_settings = {
+      :user_name => ENV['sendgrid_username'],
+      :password => ENV['sendgrid_password'],
+      :domain => 'www.anilmaurya.in',
+      :address => 'smtp.sendgrid.net',
+      :port => 587,
+      :authentication => :plain,
+      :enable_starttls_auto => true
+    }
+
   end
 end
