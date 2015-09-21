@@ -1,0 +1,21 @@
+%h2 Distributed Library
+%hr.star-primary
+= image_tag "#{image_name}.png", class: "img-responsive img-centered"
+%p 
+
+  Helps you in maintaining collection of materials available for borrowing by members of a group, 
+  yet not maintained or owned by a single user
+%ul.list-inline.item-details
+  %li 
+    Date:
+    %strong June 2015
+  %li 
+    %strong Opensource, Ruby on Rails api, Ember frontend
+  %li
+    %strong= link_to 'Api', 'https://github.com/distributed-library/rails-api', target: '_blank'
+  %li
+    %strong= link_to 'Frontend', 'https://github.com/distributed-library/library-frontend', target: '_blank'
+  %li
+    %strong= link_to 'Site', 'https://distributed-library.herokuapp.com/', target: '_blank'
+= link_to '#', class: 'btn btn-default', data: {dismiss: 'modal'} do
+  %i.fa.fa-times Close
