@@ -19,6 +19,9 @@ header img{
 .top-nav-collapse{
   padding: 0px;
 }
+.top-nav-collapse .navbar-brand{
+  display: block;
+}
 .color_white{
   color: white;
 }
