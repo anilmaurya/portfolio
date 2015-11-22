@@ -1,0 +1,21 @@
+%h2 Lets Contribute
+%hr.star-primary
+= image_tag "#{image_name}.png", class: "img-responsive img-centered"
+%p
+  Tired of your daily job ?
+
+  Lets contribute and make your presence in Open Source community !!!
+  We will show you any open issue, choosen randomaly from any repository.
+  Or any issue from a repository of your choice of language.
+%ul.list-inline.item-details
+  %li
+    Date:
+    %strong Nov 2015
+  %li
+    %strong Opensource, Ruby, Rails
+  %li
+    %strong= link_to 'Github', 'https://github.com/anilmaurya/lets_contribute', target: '_blank'
+  %li
+    %strong= link_to 'Site', 'http://letscontribute.herokuapp.com', target: '_blank'
+= link_to '#', class: 'btn btn-default', data: {dismiss: 'modal'} do
+  %i.fa.fa-times Close

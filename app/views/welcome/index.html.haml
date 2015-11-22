@@ -11,7 +11,7 @@
           %br
           %span.skills
             Programmer - Full Stack Web Developer
-  
+
 <!-- Portfolio Grid Section -->
 %section{:id => "portfolio"}
   .container
@@ -20,13 +20,14 @@
         %h2 Open Source
         %hr.star-primary
     .row
-      - ['bidder', 'burst_balloon', 'hash_tags_on_graph', 'portfolio', 'distributed_library'].each_with_index do |image_name, index|
-        .col-sm-6.portfolio-item
+      - ['bidder', 'burst_balloon', 'hash_tags_on_graph', 'portfolio', 'distributed_library', 'letscontribute'].each_with_index do |image_name, index|
+        .col-sm-4.portfolio-item
           = link_to 'javascript:void(0)', data: {target: "#portfolioModal#{index}"}, class: "portfolio-link" do
             .caption
               .caption-content
                 %i.fa.fa-search-plus.fa-3x
             = image_tag "#{image_name}.png", class: 'img-responsive'
+
 <!-- About Section -->
 %section.success{:id => "about"}
   .container
